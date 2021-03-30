@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+</head>
+<body>
+    <!-- -->
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <!-- greet function -->
+    <script src="./my-functions/greet.js" charset="utf-8"></script>
+    <script src="test/greet.test.js" charset="utf-8"></script>
+    <!-- isFromBellville function -->
+    <script src="./my-functions/isFromBellville.js" charset="utf-8"></script>
+    <script src="test/isFromBellville.test.js" charset="utf-8"></script>
+     <!-- regCheck function -->
+    <script src="./my-functions/regCheck.js" charset="utf-8"></script>
+    <script src="test/regCheck.test.js" charset="utf-8"></script>
+    <!-- countRegNumber function -->
+    <script src="./my-functions/countRegNumber.js" charset="utf-8"></script>
+    <script src="test/countRegNumber.test.js" charset="utf-8"></script>
+    <!-- isWeekday function -->
+    <script src="./my-functions/isWeekday.js" charset="utf-8"></script>
+    <script src="test/isWeekday.test.js" charset="utf-8"></script>
+    <!-- yearsAgo function -->
+    <script src="./my-functions/yearsAgo.js" charset="utf-8"></script>
+    <script src="test/yearsAgo.test.js" charset="utf-8"></script>
+     <!-- countAllPaarl function -->
+    <script src="./my-functions/countAllPaarl.js" charset="utf-8"></script>
+    <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
+     <!-- countAllFromTown function -->
+    <script src="./my-functions/countAllFromTown.js" charset="utf-8"></script>
+    <script src="test/countAllFromTown.test.js" charset="utf-8"></script>
+     <!-- transportFee function -->
+    <script src="./my-functions/transportFee.js" charset="utf-8"></script>
+    <script src="test/transportFee.test.js" charset="utf-8"></script>
+     <!-- totalPhoneBill function -->
+    <script src="./my-functions/totalPhoneBill.js" charset="utf-8"></script>
+    <script src="test/totalPhoneBill.test.js" charset="utf-8"></script>
+     <!-- fromWhere function -->
+    <script src="./my-functions/fromWhere.js" charset="utf-8"></script>
+    <script src="test/fromWhere.test.js" charset="utf-8"></script>
+    <!-- findItemsOver20 function -->
+    <script src="./my-functions/findItemsOver20.js" charset="utf-8"></script>
+    <script src="test/findItemsOver20.test.js" charset="utf-8"></script>
+    <script>
+        <!-- configure and run mocha -->
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+    
+</body>
+</html>

@@ -1,5 +1,9 @@
 function countAllFromTown(regNum,regStart){//define function
-    var reg = regNum.split(',');//convert string into an array
+  if(typeof(regNum) != 'string' || typeof(regStart) != 'string'){
+    return false;
+  }
+    
+  var reg = regNum.split(',');//convert string into an array
     var result = [];//create an empty variabe to add all reg numbers from town 
     for(var i=0;i < reg.length;i++){//loop thru the array
       var allFromTown = reg[i].trim();//remove spaces at index i

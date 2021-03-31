@@ -1,4 +1,7 @@
 function transportFee(shift){
+    if(typeof(shift) != 'string'){
+        return false;
+    }
     switch(shift) {
     case 'morning':
         return 'R20';

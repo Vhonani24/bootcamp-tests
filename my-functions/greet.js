@@ -1,6 +1,10 @@
 function greet(name){
-    var message = 'Hello, ';
+  if(typeof(name)!= 'string'){
+    return false;
+  }  
+  var message = 'Hello, ';
+    
     return message + name;
   }
   
-  greet('Rotenda');
+ 

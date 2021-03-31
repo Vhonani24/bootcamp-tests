@@ -1,5 +1,10 @@
 function isFromBellville(regNumber){
-    return regNumber.startsWith('CY');
+  if(typeof (regNumber) != 'string'){
+    return false;
   }
   
-  isFromBellville('CY HDD 58');
+
+
+    return regNumber.startsWith('CY');
+}
+  

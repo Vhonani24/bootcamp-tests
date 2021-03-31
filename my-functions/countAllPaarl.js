@@ -1,4 +1,7 @@
 function countAllPaarl(str){//define function
+  if(typeof(str) != 'string'){
+    return false;
+  }
     var reg = str.split(',');//convert string into an array
     var result = [];//create an empty variabe to add all reg numbers from paarl 
     for(var i=0;i < reg.length;i++){//loop thru the array
